@@ -137,10 +137,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Dialog", 3, 18)); // NOI18N
         jLabel3.setText("Horário do Sistema ");
 
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         jLabel4.setText("Usuário: ");
 
+        jLabel6.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         jLabel6.setText("Cargo:");
 
+        jLabel7.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         jLabel7.setText("G. Acessibilidade:");
 
         jLabel8.setText("Nome");
