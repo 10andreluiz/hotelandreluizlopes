@@ -35,6 +35,10 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jTDescricaoFOR = new javax.swing.JTextField();
+        jTDescricaoFOR1 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jSCodigoProdutoFornecido = new javax.swing.JSpinner();
         jPEndereco = new javax.swing.JPanel();
         jFCEPFOR = new javax.swing.JFormattedTextField();
         jLabel11 = new javax.swing.JLabel();
@@ -81,25 +85,46 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
             }
         });
 
+        jTDescricaoFOR1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTDescricaoFOR1ActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jLabel5.setText("Registro:");
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jLabel4.setText("Código do Produto Fornecido:");
+
         javax.swing.GroupLayout jPDadosFornecedorLayout = new javax.swing.GroupLayout(jPDadosFornecedor);
         jPDadosFornecedor.setLayout(jPDadosFornecedorLayout);
         jPDadosFornecedorLayout.setHorizontalGroup(
             jPDadosFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPDadosFornecedorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(39, 39, 39)
                 .addGroup(jPDadosFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jTnomeFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addGroup(jPDadosFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jTDescricaoFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPDadosFornecedorLayout.createSequentialGroup()
-                .addGap(319, 319, 319)
-                .addComponent(jLabel22)
+                    .addGroup(jPDadosFornecedorLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1)
+                        .addGap(39, 39, 39)
+                        .addGroup(jPDadosFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jTnomeFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(14, 14, 14)
+                        .addGroup(jPDadosFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jTDescricaoFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPDadosFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addComponent(jTDescricaoFOR1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(34, 34, 34)
+                        .addGroup(jPDadosFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addComponent(jSCodigoProdutoFornecido, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPDadosFornecedorLayout.createSequentialGroup()
+                        .addGap(319, 319, 319)
+                        .addComponent(jLabel22)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPDadosFornecedorLayout.setVerticalGroup(
@@ -111,11 +136,15 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
                         .addGap(32, 32, 32)
                         .addGroup(jPDadosFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
-                            .addComponent(jLabel3))
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPDadosFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTnomeFOR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTDescricaoFOR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jTDescricaoFOR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTDescricaoFOR1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSCodigoProdutoFornecido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPDadosFornecedorLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -130,16 +159,16 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
             ex.printStackTrace();
         }
 
-        jLabel11.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel11.setText("CEP:");
 
-        jLabel12.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel12.setText("Rua:");
 
-        jLabel13.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel13.setText("Bairro:");
 
-        jLabel14.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel14.setText("Número");
 
         jTNumeroFOR.addActionListener(new java.awt.event.ActionListener() {
@@ -148,7 +177,7 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel15.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel15.setText("Cidade:");
 
         jTCidadeFOR.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +186,7 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel16.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel16.setText("UF:");
 
         jCUFOR.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecionar", "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO", " ", " ", " ", " ", " " }));
@@ -170,26 +199,26 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
                 .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel11)
                     .addComponent(jFCEPFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel12)
-                    .addComponent(jTRuaFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13)
-                    .addComponent(jTBairroFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
-                .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel14)
-                    .addComponent(jTNumeroFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel15)
-                    .addComponent(jTCidadeFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCUFOR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel16))
+                    .addComponent(jTRuaFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12))
+                .addGap(18, 18, 18)
+                .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTBairroFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13))
+                .addGap(18, 18, 18)
+                .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTNumeroFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel14))
+                .addGap(18, 18, 18)
+                .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTCidadeFOR, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15))
+                .addGap(18, 18, 18)
+                .addGroup(jPEnderecoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel16)
+                    .addComponent(jCUFOR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPEnderecoLayout.setVerticalGroup(
@@ -216,10 +245,10 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
 
         jPContatosFOR.setBorder(javax.swing.BorderFactory.createTitledBorder("CONTATOS"));
 
-        jLabel17.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel17.setText("e-mail:");
 
-        jLabel18.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel18.setText("Telefone:");
 
         try {
@@ -301,9 +330,7 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPFornecedor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -320,6 +347,10 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
     private void jTDescricaoFORActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTDescricaoFORActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTDescricaoFORActionPerformed
+
+    private void jTDescricaoFOR1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTDescricaoFOR1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTDescricaoFOR1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -341,13 +372,17 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPContatosFOR;
     private javax.swing.JPanel jPDadosFornecedor;
     private javax.swing.JPanel jPEndereco;
     private javax.swing.JPanel jPFornecedor;
+    private javax.swing.JSpinner jSCodigoProdutoFornecido;
     private javax.swing.JTextField jTBairroFOR;
     private javax.swing.JTextField jTCidadeFOR;
     private javax.swing.JTextField jTDescricaoFOR;
+    private javax.swing.JTextField jTDescricaoFOR1;
     private javax.swing.JTextField jTEmailFOR;
     private javax.swing.JTextField jTNumeroFOR;
     private javax.swing.JTextField jTRuaFOR;

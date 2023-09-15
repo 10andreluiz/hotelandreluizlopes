@@ -38,8 +38,8 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
         jCSexoH = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTRGH = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
         jPCadastroHospedes = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -79,7 +79,7 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/customer_person_people_man_you_1625.png"))); // NOI18N
         jLabel1.setToolTipText("");
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel2.setText("Nome:");
 
         try {
@@ -93,7 +93,7 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel3.setText("CPF:");
 
         jCSexoH.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione:", "Masculino", "Feminino" }));
@@ -103,15 +103,21 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel4.setText("Sexo:");
 
-        jLabel5.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel5.setText("RG:");
 
         jLabel22.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 0, 0));
         jLabel22.setText("(*) Campos obrigatórios.");
+
+        try {
+            jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###-#")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
 
         javax.swing.GroupLayout jPDadosHospedesLayout = new javax.swing.GroupLayout(jPDadosHospedes);
         jPDadosHospedes.setLayout(jPDadosHospedesLayout);
@@ -122,23 +128,26 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(jPDadosHospedesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jTnomeH, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
+                    .addGroup(jPDadosHospedesLayout.createSequentialGroup()
+                        .addComponent(jTnomeH, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPDadosHospedesLayout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(123, 123, 123)
+                        .addComponent(jLabel5)))
                 .addGroup(jPDadosHospedesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPDadosHospedesLayout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(160, 160, 160)
-                        .addComponent(jLabel4))
+                        .addGap(18, 18, 18)
+                        .addComponent(jCSexoH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jFCpfH, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPDadosHospedesLayout.createSequentialGroup()
-                        .addComponent(jTRGH, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(41, 41, 41)
-                        .addComponent(jCSexoH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(34, 34, 34)
-                .addGroup(jPDadosHospedesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jFCpfH, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addContainerGap(144, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel4)
+                        .addGap(61, 61, 61)
+                        .addComponent(jLabel3)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPDadosHospedesLayout.createSequentialGroup()
                 .addGap(319, 319, 319)
                 .addComponent(jLabel22)
@@ -160,8 +169,8 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
                         .addGroup(jPDadosHospedesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTnomeH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jCSexoH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTRGH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jFCpfH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jFCpfH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPDadosHospedesLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -173,10 +182,10 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         jLabel6.setText("Os campos abaixo deverão ser preenchidos somente por hospedes que tenham acesso ao sistema.");
 
-        jLabel8.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel8.setText("Nome:");
 
-        jLabel9.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel9.setText("Senha:");
 
         javax.swing.GroupLayout jPCadastroHospedesLayout = new javax.swing.GroupLayout(jPCadastroHospedes);
@@ -215,10 +224,10 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
 
         jPContatosHospedes.setBorder(javax.swing.BorderFactory.createTitledBorder("CONTATOS"));
 
-        jLabel17.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel17.setText("e-mail:");
 
-        jLabel18.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel18.setText("Telefone:");
 
         try {
@@ -262,10 +271,10 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
             ex.printStackTrace();
         }
 
-        jLabel11.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel11.setText("CEP:");
 
-        jLabel12.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel12.setText("Rua:");
 
         jTRuaH.addActionListener(new java.awt.event.ActionListener() {
@@ -274,10 +283,10 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel13.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel13.setText("Bairro:");
 
-        jLabel14.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel14.setText("Número");
 
         jTNumeroH.addActionListener(new java.awt.event.ActionListener() {
@@ -286,7 +295,7 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel15.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel15.setText("Cidade:");
 
         jTCidadeH.addActionListener(new java.awt.event.ActionListener() {
@@ -295,7 +304,7 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel16.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel16.setText("UF:");
 
         jCUFH.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecionar", "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO", " ", " ", " ", " ", " " }));
@@ -461,6 +470,7 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
     private javax.swing.JFormattedTextField jFCEPH;
     private javax.swing.JFormattedTextField jFCpfH;
     private javax.swing.JFormattedTextField jFTelefoneH;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -490,7 +500,6 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
     private javax.swing.JTextField jTEmailH;
     private javax.swing.JTextField jTNomeH;
     private javax.swing.JTextField jTNumeroH;
-    private javax.swing.JTextField jTRGH;
     private javax.swing.JTextField jTRuaH;
     private javax.swing.JTextField jTnomeH;
     // End of variables declaration//GEN-END:variables
