@@ -20,26 +20,5 @@ public class TesteConexao {
         } catch (SQLException ex) {
             Logger.getLogger(ConexaoDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-//            ConexaoDAO con = new ConexaoDAO();
-//            String sql = "select * from funcionarios";
-//            PreparedStatement stm = con.getConexaoDAO().prepareStatement(sql);
-//            ResultSet rs = stm.executeQuery();
-//            while (rs.next()) {
-//                
-//                
-//                String nome = rs.getString("nome");
-//                String cpf = rs.getString("cpf");
-//                String sexo = rs.getString("sexo");
-//                String idade = rs.getString("sexo");
-//                
-//                String mdq = nome + " - " + cpf + " - " + sexo + " - " + idade ;
-//                System.out.println(mdq);
-//              
-//            }
-//
-//        } catch (Exception ex) {
-//            ex.printStackTrace();
-//        }
     }
 }
