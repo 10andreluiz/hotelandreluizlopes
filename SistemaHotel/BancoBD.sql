@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS Funcionarios (
     uf CHAR(2),
     senha varchar(10)
 );
-
 CREATE TABLE IF NOT EXISTS Fornecedores (
     id_fornecedores INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(77) NOT NULL,
@@ -36,7 +35,7 @@ CREATE TABLE IF NOT EXISTS Fornecedores (
 CREATE TABLE IF NOT EXISTS Clientes (
     id_clientes INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(77) NOT NULL,
-    cpf VARCHAR(14) UNIQUE,
+    cpf_hospede VARCHAR(14) UNIQUE,
     sexo CHAR(1),
     email VARCHAR(77),
     telefone VARCHAR(20),
