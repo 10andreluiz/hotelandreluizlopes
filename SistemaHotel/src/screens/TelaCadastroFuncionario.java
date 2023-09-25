@@ -57,7 +57,7 @@ public class TelaCadastroFuncionario extends javax.swing.JInternalFrame {
         jTCidadeF = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jCUF = new javax.swing.JComboBox<>();
-        btnCancelarF = new javax.swing.JButton();
+        btnExcluirFuncionario = new javax.swing.JButton();
         btnSalvarF = new javax.swing.JButton();
         btnAtualizarF = new javax.swing.JButton();
 
@@ -373,10 +373,10 @@ public class TelaCadastroFuncionario extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnCancelarF.setText("Cancelar");
-        btnCancelarF.addActionListener(new java.awt.event.ActionListener() {
+        btnExcluirFuncionario.setText("Excluir");
+        btnExcluirFuncionario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelarFActionPerformed(evt);
+                btnExcluirFuncionarioActionPerformed(evt);
             }
         });
 
@@ -401,7 +401,7 @@ public class TelaCadastroFuncionario extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnAtualizarF)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnCancelarF)
+                        .addComponent(btnExcluirFuncionario)
                         .addGap(18, 18, 18))
                     .addGroup(jPTelaCadastroFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jPDadosPessoaisF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -424,7 +424,7 @@ public class TelaCadastroFuncionario extends javax.swing.JInternalFrame {
                 .addGroup(jPTelaCadastroFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSalvarF)
                     .addComponent(btnAtualizarF)
-                    .addComponent(btnCancelarF))
+                    .addComponent(btnExcluirFuncionario))
                 .addGap(0, 1273, Short.MAX_VALUE))
         );
 
@@ -448,9 +448,9 @@ public class TelaCadastroFuncionario extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSalvarFActionPerformed
 
-    private void btnCancelarFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarFActionPerformed
+    private void btnExcluirFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirFuncionarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCancelarFActionPerformed
+    }//GEN-LAST:event_btnExcluirFuncionarioActionPerformed
 
     private void jTCidadeFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTCidadeFActionPerformed
         // TODO add your handling code here:
@@ -471,7 +471,7 @@ public class TelaCadastroFuncionario extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtualizarF;
-    private javax.swing.JButton btnCancelarF;
+    private javax.swing.JButton btnExcluirFuncionario;
     private javax.swing.JButton btnSalvarF;
     private javax.swing.JComboBox<String> jCGrauDeAcessoF;
     private javax.swing.JComboBox<String> jCGrauDeAcessoF1;

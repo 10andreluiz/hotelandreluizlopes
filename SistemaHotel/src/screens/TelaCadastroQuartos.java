@@ -39,7 +39,7 @@ public class TelaCadastroQuartos extends javax.swing.JInternalFrame {
         jCheckBox1 = new javax.swing.JCheckBox();
         jLabel17 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jBExcluirQuarto = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
@@ -126,7 +126,7 @@ public class TelaCadastroQuartos extends javax.swing.JInternalFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jButton1.setText("Cancelar");
+        jBExcluirQuarto.setText("Cancelar");
 
         jButton2.setText("Atualizar");
 
@@ -145,7 +145,7 @@ public class TelaCadastroQuartos extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addComponent(jBExcluirQuarto)
                 .addGap(12, 12, 12))
         );
         jPFornecedorLayout.setVerticalGroup(
@@ -155,7 +155,7 @@ public class TelaCadastroQuartos extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3)
-                    .addComponent(jButton1)
+                    .addComponent(jBExcluirQuarto)
                     .addComponent(jButton2))
                 .addGap(0, 11, Short.MAX_VALUE))
         );
@@ -176,7 +176,7 @@ public class TelaCadastroQuartos extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jBExcluirQuarto;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JComboBox<String> jCUFOR;

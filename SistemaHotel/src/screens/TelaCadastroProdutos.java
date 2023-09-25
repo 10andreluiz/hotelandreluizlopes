@@ -44,7 +44,7 @@ public class TelaCadastroProdutos extends javax.swing.JInternalFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jTNomeP1 = new javax.swing.JTextField();
-        jBCancelar = new javax.swing.JButton();
+        jBExcluirProduto = new javax.swing.JButton();
         jBSalvar = new javax.swing.JButton();
         jBAtualizar = new javax.swing.JButton();
 
@@ -160,7 +160,7 @@ public class TelaCadastroProdutos extends javax.swing.JInternalFrame {
                 .addContainerGap(37, Short.MAX_VALUE))
         );
 
-        jBCancelar.setText("Cancelar");
+        jBExcluirProduto.setText("Cancelar");
 
         jBSalvar.setText("Salvar");
 
@@ -176,7 +176,7 @@ public class TelaCadastroProdutos extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jBAtualizar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jBCancelar)
+                .addComponent(jBExcluirProduto)
                 .addContainerGap())
             .addComponent(jPDadosProduto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -186,7 +186,7 @@ public class TelaCadastroProdutos extends javax.swing.JInternalFrame {
                 .addComponent(jPDadosProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBCancelar)
+                    .addComponent(jBExcluirProduto)
                     .addComponent(jBSalvar)
                     .addComponent(jBAtualizar))
                 .addGap(0, 13, Short.MAX_VALUE))
@@ -215,7 +215,7 @@ public class TelaCadastroProdutos extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBAtualizar;
-    private javax.swing.JButton jBCancelar;
+    private javax.swing.JButton jBExcluirProduto;
     private javax.swing.JButton jBSalvar;
     private javax.swing.JComboBox<String> jCTipoP;
     private javax.swing.JFormattedTextField jFValor;

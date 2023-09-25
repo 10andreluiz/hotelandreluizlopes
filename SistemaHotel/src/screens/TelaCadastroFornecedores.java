@@ -57,7 +57,7 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
         jTEmailFOR = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
         jFTelefoneFOR = new javax.swing.JFormattedTextField();
-        jButton1 = new javax.swing.JButton();
+        jBExcluirFornecedor = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
@@ -284,7 +284,7 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jButton1.setText("Cancelar");
+        jBExcluirFornecedor.setText("Excluir");
 
         jButton2.setText("Atualizar");
 
@@ -303,7 +303,7 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
                 .addGap(7, 7, 7)
-                .addComponent(jButton1)
+                .addComponent(jBExcluirFornecedor)
                 .addContainerGap())
         );
         jPFornecedorLayout.setVerticalGroup(
@@ -318,7 +318,7 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
                 .addGroup(jPFornecedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3)
                     .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(jBExcluirFornecedor))
                 .addGap(0, 20, Short.MAX_VALUE))
         );
 
@@ -354,7 +354,7 @@ public class TelaCadastroFornecedores extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jBExcluirFornecedor;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JComboBox<String> jCUFOR;

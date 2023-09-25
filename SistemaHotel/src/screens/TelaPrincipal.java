@@ -16,10 +16,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     public TelaPrincipal() {
         initComponents();
-        
-  setExtendedState(MAXIMIZED_BOTH); //ABRIR TELA DE ABA A ABA
-        
-        
+
+        setExtendedState(MAXIMIZED_BOTH); //ABRIR TELA DE ABA A ABA
+
     }
 
     /**
@@ -253,6 +252,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu9.setText("Quartos");
 
         jMenuItem4.setText("Cadastramentos");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu9.add(jMenuItem4);
 
         jMenuItem5.setText("Consultas");
@@ -283,6 +287,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu11.setText("Fornecedores");
 
         jMenuItem22.setText("Cadastramentos");
+        jMenuItem22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem22ActionPerformed(evt);
+            }
+        });
         jMenu11.add(jMenuItem22);
 
         jMenuItem23.setText("Consultas");
@@ -293,6 +302,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu12.setText("Produtos");
 
         jMenuItem24.setText("Cadastramentos");
+        jMenuItem24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem24ActionPerformed(evt);
+            }
+        });
         jMenu12.add(jMenuItem24);
 
         jMenuItem25.setText("Consultas");
@@ -546,6 +560,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void menuCadastroHospedeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadastroHospedeActionPerformed
+        TelaCadastroHospedes telaHospede = new TelaCadastroHospedes();
+        telaFundo.add(telaHospede);
+        telaHospede.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_menuCadastroHospedeActionPerformed
 
@@ -558,10 +575,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBalancoActionPerformed
 
     private void btnCadastrarFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarFuncionariosActionPerformed
-    TelaCadastroHospedes telaFuncionario = new TelaCadastroHospedes();
-    telaFundo.add(telaFuncionario);
-    telaFuncionario.setVisible(true);
-    // TODO add your handling code here:
+        TelaCadastroFuncionario telaFuncionario = new TelaCadastroFuncionario();
+        telaFundo.add(telaFuncionario);
+        telaFuncionario.setVisible(true);
+        // TODO add your handling code here:
     }//GEN-LAST:event_btnCadastrarFuncionariosActionPerformed
 
     private void btnCadastrarReservaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCadastrarReservaMouseClicked
@@ -623,6 +640,28 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSairActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        TelaCadastroQuartos telaQuartos = new TelaCadastroQuartos();
+        telaFundo.add(telaQuartos);
+        telaQuartos.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem24ActionPerformed
+        TelaCadastroProdutos telaProdutos = new TelaCadastroProdutos();
+        telaFundo.add(telaProdutos);
+        telaProdutos.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem24ActionPerformed
+
+    private void jMenuItem22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem22ActionPerformed
+        TelaCadastroFornecedores telaFornecedores = new TelaCadastroFornecedores();
+        telaFundo.add(telaFornecedores);
+        telaFornecedores.setVisible(true);
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem22ActionPerformed
 
     /**
      * @param args the command line arguments

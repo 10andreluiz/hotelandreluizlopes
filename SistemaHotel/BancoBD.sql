@@ -15,14 +15,14 @@ CREATE TABLE IF NOT EXISTS Funcionarios (
     bairro VARCHAR(77),
     numero INT,
     cidade VARCHAR(77),
-    uf CHAR(2)
+    uf CHAR(2),
+    senha varchar(10)
 );
 
 CREATE TABLE IF NOT EXISTS Fornecedores (
     id_fornecedores INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(77) NOT NULL,
     descricao TEXT,
-    cpf_fornecedor VARCHAR(14) UNIQUE,
     rua VARCHAR(77),
     bairro VARCHAR(77),
     numero INT,
@@ -45,7 +45,8 @@ CREATE TABLE IF NOT EXISTS Clientes (
     bairro VARCHAR(77),
     numero INT,
     cidade VARCHAR(77),
-    uf CHAR(2)
+    uf CHAR(2),
+    senha varchar(10)
 );
 
 CREATE TABLE IF NOT EXISTS Produtos (
