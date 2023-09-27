@@ -81,7 +81,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="btnAtualizarF" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btnCancelarF" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnExcluirFuncionario" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -109,7 +109,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btnSalvarF" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnAtualizarF" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnCancelarF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnExcluirFuncionario" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="1273" max="32767" attributes="0"/>
                   </Group>
@@ -310,6 +310,9 @@
                       </StringArray>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCGrauDeAcessoF1ActionPerformed"/>
+                  </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
@@ -705,12 +708,12 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JButton" name="btnCancelarF">
+            <Component class="javax.swing.JButton" name="btnExcluirFuncionario">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Cancelar"/>
+                <Property name="text" type="java.lang.String" value="Excluir"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelarFActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExcluirFuncionarioActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btnSalvarF">

@@ -62,7 +62,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnAtualizarH" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnCancelarH" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnExcluirHospede" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -81,7 +81,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btnSalvarH" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnAtualizarH" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnCancelarH" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnExcluirHospede" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="1345" max="32767" attributes="0"/>
                   </Group>
@@ -615,12 +615,12 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JButton" name="btnCancelarH">
+            <Component class="javax.swing.JButton" name="btnExcluirHospede">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Cancelar"/>
+                <Property name="text" type="java.lang.String" value="Excluir"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelarHActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExcluirHospedeActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btnSalvarH">

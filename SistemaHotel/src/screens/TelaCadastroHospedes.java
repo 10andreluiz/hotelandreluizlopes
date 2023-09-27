@@ -64,7 +64,7 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
         jTCidadeH = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jCUFH = new javax.swing.JComboBox<>();
-        btnCancelarH = new javax.swing.JButton();
+        btnExcluirHospede = new javax.swing.JButton();
         btnSalvarH = new javax.swing.JButton();
         btnAtualizarH = new javax.swing.JButton();
 
@@ -361,10 +361,10 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btnCancelarH.setText("Cancelar");
-        btnCancelarH.addActionListener(new java.awt.event.ActionListener() {
+        btnExcluirHospede.setText("Excluir");
+        btnExcluirHospede.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelarHActionPerformed(evt);
+                btnExcluirHospedeActionPerformed(evt);
             }
         });
 
@@ -395,7 +395,7 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnAtualizarH)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCancelarH)
+                .addComponent(btnExcluirHospede)
                 .addContainerGap())
         );
         jPTelaCadastroHospedesLayout.setVerticalGroup(
@@ -412,7 +412,7 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
                 .addGroup(jPTelaCadastroHospedesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSalvarH)
                     .addComponent(btnAtualizarH)
-                    .addComponent(btnCancelarH))
+                    .addComponent(btnExcluirHospede))
                 .addGap(0, 1345, Short.MAX_VALUE))
         );
 
@@ -436,9 +436,9 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSalvarHActionPerformed
 
-    private void btnCancelarHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarHActionPerformed
+    private void btnExcluirHospedeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirHospedeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCancelarHActionPerformed
+    }//GEN-LAST:event_btnExcluirHospedeActionPerformed
 
     private void jTCidadeHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTCidadeHActionPerformed
         // TODO add your handling code here:
@@ -463,7 +463,7 @@ public class TelaCadastroHospedes extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtualizarH;
-    private javax.swing.JButton btnCancelarH;
+    private javax.swing.JButton btnExcluirHospede;
     private javax.swing.JButton btnSalvarH;
     private javax.swing.JComboBox<String> jCSexoH;
     private javax.swing.JComboBox<String> jCUFH;
