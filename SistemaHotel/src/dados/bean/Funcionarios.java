@@ -1,10 +1,11 @@
-package models;
+package dados.bean;
 
-public class Hospede {
-
-	private int id;
+public class Funcionarios {
+    
     private String nome;
-    private String cpf_hospede;
+    private String rg;
+    private String cpf_funcionario;
+    private String cargo;
     private String sexo;
     private String email;
     private String telefone;
@@ -16,9 +17,11 @@ public class Hospede {
     private String uf;
     private String senha;
 
-    public Hospede(String nome, String cpf_hospede, String sexo, String email, String telefone, String cep, String rua, String bairro, int numero, String cidade, String uf, String senha) {
+    public Funcionarios(String nome, String rg, String cpf_funcionario, String cargo, String sexo, String email, String telefone, String cep, String rua, String bairro, int numero, String cidade, String uf, String senha) {
         this.nome = nome;
-        this.cpf_hospede = cpf_hospede;
+        this.rg = rg;
+        this.cpf_funcionario = cpf_funcionario;
+        this.cargo = cargo;
         this.sexo = sexo;
         this.email = email;
         this.telefone = telefone;
@@ -30,14 +33,6 @@ public class Hospede {
         this.uf = uf;
         this.senha = senha;
     }
-
-    public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
     
     public String getNome() {
         return nome;
@@ -47,12 +42,28 @@ public class Hospede {
         this.nome = nome;
     }
 
-    public String getCpf_hospede() {
-        return cpf_hospede;
+    public String getRg() {
+        return rg;
     }
 
-    public void setCpf_hospede(String cpf_hospede) {
-        this.cpf_hospede = cpf_hospede;
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public String getCpf_funcionario() {
+        return cpf_funcionario;
+    }
+
+    public void setCpf_funcionario(String cpf_funcionario) {
+        this.cpf_funcionario = cpf_funcionario;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
     }
 
     public String getSexo() {

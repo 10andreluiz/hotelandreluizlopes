@@ -5,7 +5,11 @@ CREATE TABLE IF NOT EXISTS Funcionarios (
     id_funcionarios INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(77) NOT NULL,
     rg VARCHAR(20),
+<<<<<<< HEAD
     cpf_funcionario VARCHAR(20) UNIQUE,
+=======
+    cpf_funcionario VARCHAR(14) UNIQUE,
+>>>>>>> 75e76f50cde1a2e2f16c8b847dff47b30f587745
     cargo VARCHAR(77),
     sexo CHAR(1),
     email VARCHAR(77),
@@ -35,7 +39,11 @@ CREATE TABLE IF NOT EXISTS Fornecedores (
 CREATE TABLE IF NOT EXISTS Clientes (
     id_clientes INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(77) NOT NULL,
+<<<<<<< HEAD
     cpf_hospede VARCHAR(20) UNIQUE,
+=======
+    cpf_hospede VARCHAR(14) UNIQUE,
+>>>>>>> 75e76f50cde1a2e2f16c8b847dff47b30f587745
     sexo CHAR(1),
     email VARCHAR(77),
     telefone VARCHAR(20),
@@ -70,9 +78,13 @@ CREATE TABLE IF NOT EXISTS Quartos (
 
 CREATE TABLE IF NOT EXISTS Servicos (
     tipo VARCHAR(77),
+<<<<<<< HEAD
     locals VARCHAR(77),
     id_funcionarios int,
     FOREIGN KEY (id_funcionarios) REFERENCES Funcionarios(id_funcionarios)
+=======
+    local VARCHAR(77)
+>>>>>>> 75e76f50cde1a2e2f16c8b847dff47b30f587745
 );
 
 CREATE TABLE IF NOT EXISTS Vendas (
@@ -127,6 +139,7 @@ CREATE TABLE IF NOT EXISTS Itens_da_Compra (
     preco_unitario DOUBLE,
     subtotal DOUBLE,
     FOREIGN KEY (id_produto) REFERENCES Produtos(codigo)
+<<<<<<< HEAD
 );
  
  INSERT INTO Funcionarios (nome, rg, cpf_funcionario, cargo, sexo, email, telefone, cep, rua, bairro, numero, cidade, uf, senha)
@@ -603,3 +616,6 @@ VALUES
 
 use sistemahotel;
 drop database sistemahotel;
+=======
+);
+>>>>>>> 75e76f50cde1a2e2f16c8b847dff47b30f587745

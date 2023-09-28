@@ -117,11 +117,6 @@ public class TelaCadastroFuncionario extends javax.swing.JInternalFrame {
         jLabel22.setText("(*) Campos obrigatórios.");
 
         jCGrauDeAcessoF1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecionar", "CEO", "Presidente", "Diretor", "Gerente", "Coordenador ou supervisor", "Analista", "Assistente", "Auxiliar" }));
-        jCGrauDeAcessoF1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCGrauDeAcessoF1ActionPerformed(evt);
-            }
-        });
 
         try {
             jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###-#")));
@@ -472,10 +467,6 @@ public class TelaCadastroFuncionario extends javax.swing.JInternalFrame {
     private void jFCpfFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFCpfFActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jFCpfFActionPerformed
-
-    private void jCGrauDeAcessoF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCGrauDeAcessoF1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCGrauDeAcessoF1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

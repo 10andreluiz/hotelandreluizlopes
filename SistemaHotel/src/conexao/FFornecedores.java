@@ -104,7 +104,7 @@ public class FFornecedores {
             preparedStatement.setString(8, dts.getEmail());
             preparedStatement.setInt(9, dts.getTelefone());
             preparedStatement.setString(10, dts.getCep());
-            preparedStatement.setInt(11, dts.getid_fornecedores());
+            preparedStatement.setInt(11, dts.getId_fornecedores());
 
             int n = preparedStatement.executeUpdate();
             if (n != 0) {
@@ -127,7 +127,7 @@ public class FFornecedores {
         sSQL = "delete from fornecedores where id fornecedores=?";
         try {
             PreparedStatement preparedStatement = conn.prepareStatement(sSQL);
-            preparedStatement.setInt(1, dts.getid_fornecedores());
+            preparedStatement.setInt(1, dts.getId_fornecedores());
 
             int n = preparedStatement.executeUpdate();
             if (n != 0) {

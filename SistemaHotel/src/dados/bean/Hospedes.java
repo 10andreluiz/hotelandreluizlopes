@@ -1,8 +1,7 @@
-package models;
+package dados.bean;
 
-public class Hospede {
+public class Hospedes {
 
-	private int id;
     private String nome;
     private String cpf_hospede;
     private String sexo;
@@ -16,7 +15,7 @@ public class Hospede {
     private String uf;
     private String senha;
 
-    public Hospede(String nome, String cpf_hospede, String sexo, String email, String telefone, String cep, String rua, String bairro, int numero, String cidade, String uf, String senha) {
+    public Hospedes(String nome, String cpf_hospede, String sexo, String email, String telefone, String cep, String rua, String bairro, int numero, String cidade, String uf, String senha) {
         this.nome = nome;
         this.cpf_hospede = cpf_hospede;
         this.sexo = sexo;
@@ -31,14 +30,6 @@ public class Hospede {
         this.senha = senha;
     }
 
-    public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-    
     public String getNome() {
         return nome;
     }
