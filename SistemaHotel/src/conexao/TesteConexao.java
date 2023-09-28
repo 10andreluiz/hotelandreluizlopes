@@ -10,7 +10,7 @@ public class TesteConexao {
 
     public static void main(String[] args) {
 
-        ConexaoDAO dao = new ConexaoDAO();
+        Conexao dao = new Conexao();
         try {
             PreparedStatement p = dao.conectaBD().prepareStatement("select * from funcionarios");
             ResultSet rs = p.executeQuery();
@@ -18,7 +18,7 @@ public class TesteConexao {
                 System.out.println(rs.getString("nome"));
             }
         } catch (SQLException ex) {
-            Logger.getLogger(ConexaoDAO.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Conexao.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }
