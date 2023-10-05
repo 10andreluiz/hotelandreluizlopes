@@ -8,12 +8,12 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-import conexao.Conexao;
+import conexao.ConexaoDAO;
 import models.Fornecedor;
 
 public class DaoFornecedor {
 
-	private Conexao mysql = new Conexao();
+	private ConexaoDAO mysql = new ConexaoDAO();
 	private Connection conn = mysql.conectaBD();
 	private String sSQL = "";
 	public Integer totalregistros;
