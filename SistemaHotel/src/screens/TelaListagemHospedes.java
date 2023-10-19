@@ -43,9 +43,17 @@ public class TelaListagemHospedes extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "Título 1", "Título 2", "Título 3", "Título 4"
+                "ID", "Nome"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane1.setViewportView(jTHospedes);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 11)); // NOI18N
