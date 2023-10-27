@@ -170,7 +170,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createSequentialGroup()
                             .addGap(127, 127, 127)
                             .addComponent(jLabel2))
-                        .addComponent(btnSair)
                         .addComponent(jSeparator4)
                         .addGroup(jPanel3Layout.createSequentialGroup()
                             .addContainerGap()
@@ -201,7 +200,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addGap(86, 86, 86)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3)
-                            .addComponent(jLabel4))))
+                            .addComponent(jLabel4)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnSair)))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
